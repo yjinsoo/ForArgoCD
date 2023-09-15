@@ -7,5 +7,5 @@ metadata:
   name: db
 spec:
   containers:
-  - image: harma0517/test-maria-db:42
+  - image: harma0517/test-maria-db:30
     name: db

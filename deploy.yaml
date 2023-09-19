@@ -14,10 +14,6 @@ spec:
     spec:
       containers:
       - name: my-nginx
-<<<<<<< HEAD
         image: jinsu0625/test:60
-=======
-        image: jinsu0625/test:58
->>>>>>> de545fb8602d7835a0a5ec05884ea199549dcb76
         ports:
         - containerPort: 80

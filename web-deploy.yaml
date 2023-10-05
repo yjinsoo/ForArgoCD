@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: pro3-web
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: pro3-web
-        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:11
+        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:12
         ports:
         - containerPort: 80
         env:
           - name: TOMCATS
-            value: pro3-app-service
+            value: k8s-default-pro3apps-1bd24edb6b-c79084554ce23fed.elb.us-west-2.amazonaws.com

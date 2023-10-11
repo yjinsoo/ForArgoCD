@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pro3-web
-        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:17
+        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:18
         ports:
         - containerPort: 80
         env:

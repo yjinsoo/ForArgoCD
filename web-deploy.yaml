@@ -14,9 +14,16 @@ spec:
     spec:
       containers:
       - name: pro3-web
-        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:22
+        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:29
         ports:
         - containerPort: 80
+        resources:
+          limits:
+            cpu: 500ms
+            memory: 2Gi
+          requests:
+            cpu: 200ms
+            memory: 1Gi
         env:
           - name: TOMCATS
             value: k8s-default-pro3apps-950def5ade-510dcad5dffe5627.elb.us-west-2.amazonaws.com

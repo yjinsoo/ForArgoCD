@@ -14,9 +14,16 @@ spec:
     spec:
       containers:
       - name: pro3-app
-        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/tomcat:14
+        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/tomcat:18
         ports:
         - containerPort: 8080
+        resources:
+          limits:
+            cpu: 500ms
+            memory: 2Gi
+          requests:
+            cpu: 200ms
+            memory: 1Gi
         env:
           - name: MYDB
             value: pro3-db-service

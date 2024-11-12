@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: nginx1
-  name: nginx1
+    run: nginx112
+  name: nginx112
 spec:
   containers:
-  - image: nginx1
+  - image: nginx112
     imagePullPolicy: IfNotPresent
     name: nginx1
 
